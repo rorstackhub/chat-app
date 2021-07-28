@@ -1,0 +1,87 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background: rgb(247,244,247);
+  background: linear-gradient(90deg, rgba(247,244,247,1) 0%, rgba(242,234,234,1) 99%, rgba(0,212,255,1) 100%);
+}
+
+.chat {
+  border: 1px solid lighten($secondary, 40%);
+  background: lighten($secondary, 50%);
+  height: 50vh;
+  border-radius: 5px 5px 0 0;
+  overflow-y: auto;
+}
+
+.chat-input {
+  border-top: 0 none;
+  border-radius: 0 0 5px 5px;
+  width: 90%;
+}
+
+.avatar {
+    max-height:30px;
+    border-radius: 15px;
+    width:auto;
+    vertical-align:middle;
+  }
+
+  .chat-message-container {
+    padding: 5px;
+
+    .avatar {
+      margin: 5px;
+    }
+
+    .message-content {
+      padding: 5px;
+      border: 1px solid $primary;
+      border-radius: 5px;
+      background: lighten($primary, 10%);
+      color: $white;
+    }
+
+    & + .chat-message-container {
+      margin-top: 10px;
+    }
+  }
+
+// LogIn form
+
+.new_user {
+  margin: 0 auto;
+}
+
+// private chat css
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+// messages
+
+.messages-list {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.message-sent {
+  position: relative;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  margin: 5px 20px;
+  padding: 10px;
+  float: right;
+}
+
+
+.message-received {
+  background-color: #F1F0F0;
+  border-color: #EEEEEE;
+  margin: 5px 20px;
+  padding: 10px;
+  float: left;
+}
